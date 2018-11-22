@@ -1,0 +1,35 @@
+{
+    "application": {
+        "models_path": "app\/models",
+        "views_path": "app\/views",
+        "controllers_path": "app\/controllers",
+        "assets_path": "app\/assets",
+        "events_path": "app\/events"
+    },
+    "database": {
+        "host": "",
+        "user": "",
+        "password": "",
+        "database": ""
+    },
+    "session": {
+        "name": "tinyf",
+        "secret": "abcd",
+        "save_dir": "app\/cache\/sessions",
+        "lifetime": 60
+    },
+    "garbage_cleaner": {
+        "check_interval": 60,
+        "last_check": 1452263465,
+        "definition": {
+            "app\/cache\/sessions": 7200,
+            "app\/cache\/controllers": 600
+        }
+    },
+    "cache": {
+        "enabled": false,
+        "cache_interval": 300,
+        "cache_dir": "app\/cache",
+        "routes": []
+    }
+}
